@@ -1,0 +1,29 @@
+.project-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-block: 20px;
+    flex-wrap: wrap;
+
+}
+.project-items{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 20px;
+}
+.project-items:hover{
+    background-color: rgb(236, 236, 236);
+    border: none;
+}
+.project-items button{
+    padding: 5px 20px;
+    font-size: large;
+    background-color: red;
+    color: white;
+    border-radius: 10%;
+    border: none;
+}

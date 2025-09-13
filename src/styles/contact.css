@@ -1,0 +1,39 @@
+.Contact-container{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.contact-item{
+    background-color: aliceblue;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 20px;
+    background-color: rgb(233, 231, 231);
+}
+.contact-item>form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 75%;
+}
+.Contact-container>form>input{
+    margin-top: 10px;
+    padding: 20px;
+}
+.contact-button{
+    width:  fit-content;
+    align-self: center;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(26, 25, 25);
+    padding: 10px 40px;
+}
+@media only screen and (max-width: 600px) {
+  .contact-item{
+    width: 90%;
+  }
+}
