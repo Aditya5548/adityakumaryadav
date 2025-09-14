@@ -3,26 +3,24 @@ import Image from 'next/image';
 import gsap from 'gsap';
 import image2 from '../image/Photo.jpg'
 const Body = () => {
-    useEffect(()=>{
-        gsap.from(".section-two-content",{
-            x: -150,
-            duration: 1,
-        });
-        gsap.from(".myphoto",{
-            x: 150,
-            duration: 1,
-        });
-        gsap.from(".aboutme",{
-            x: -400,
-            duration: 2,
-        });
-        gsap.from(".personal-detail",{
-            x: -500,
-            duration: 1,
-        });
-
-
-    })
+    // useEffect(()=>{
+    //     gsap.from(".section-two-content",{
+    //         x: -150,
+    //         duration: 1,
+    //     });
+    //     gsap.from(".myphoto",{
+    //         x: 150,
+    //         duration: 1,
+    //     });
+    //     gsap.from(".aboutme",{
+    //         x: -400,
+    //         duration: 2,
+    //     });
+    //     gsap.from(".personal-detail",{
+    //         x: -500,
+    //         duration: 1,
+    //     });
+    // })
     return (
         <div>
             <section className="container section-two">
