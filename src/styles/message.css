@@ -16,7 +16,7 @@
 .message-data{
     width: 600px;
     background-color: white;
-    padding-block: 50px;  
+    padding: 50px 10px;  
     border-radius: 10px;
     margin-block: 20px;
 }
