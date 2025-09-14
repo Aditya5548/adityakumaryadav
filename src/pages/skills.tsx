@@ -5,8 +5,8 @@ const skills = () => {
     <div>
       <Navbar />
       <div className="p-3">
-      <h2>Skills</h2>
-      <div className="container-fluid">
+      <h2 className="borderbottom">Skills</h2>
+      <div className="container">
         <div className="row d-flex justify-content-around">
           <div className="col-md-4">
             <h3>Frontend Technologies</h3>
@@ -37,7 +37,7 @@ const skills = () => {
           </div>
         </div>
       </div>
-      <h2>Certificates</h2>
+      <h2 className="borderbottom">Certificates</h2>
       <div className="container-fluid">
         <div>
           <div className="row">
@@ -52,7 +52,7 @@ const skills = () => {
           </div>
         </div>
       </div>
-      <h2>Trainings & Internships </h2>
+      <h2 className="borderbottom">Trainings & Internships </h2>
       <div className="container-fluid">
         <div className="d-flex flex-wrap">
           <ul className="list-style">

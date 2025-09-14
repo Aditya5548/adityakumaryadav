@@ -1,6 +1,6 @@
 .first-section{
     width: 100%;
-    background-color: rgb(49, 48, 48);
+    background-color: rgb(31, 30, 30);
 }
 .navbar-container{
     display: flex;
@@ -17,7 +17,9 @@
     font-size: 40px;
     color: white;
 }
-
+.navbar-list{
+    display: block;
+}
 .navbar-links{
     display: flex;
     align-items: center;

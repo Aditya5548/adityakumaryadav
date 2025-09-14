@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import axios from 'axios'
@@ -6,10 +6,11 @@ import toast from 'react-hot-toast'
 const MessagePage = () => {
   const router = useRouter()
   const data = router.query
-  // console.log(data)
-      async function Updatestatus (id: any){
+  const [status,setStatus]= useState(data.Status)
+  async function Updatestatus (id: any){
         try {
            const response = await axios.patch('/api/Routes',{id: id})
+           setStatus(String(status) === 'true' ? 'false' : 'true')
            toast.success(response.data.status) 
         } catch (error) {
             toast.error("Error") 
@@ -29,11 +30,14 @@ const MessagePage = () => {
           <p><b>Purpose   </b>{data.Purpose}</p>
           <p className='border-bottom-none'><b>Message   </b>{data.Message}</p>
         </div>
-        <div className='d-flex justify-content-around'>
-          <Link href="https://share.google/Vapr3dDP2eam3jLxQ" className='btn btn-danger px-4 py-2'><i className="fa-solid fa-envelope"></i> Email</Link>
+        <div className='d-flex justify-content-between'>
           <Link href={`tel:+91${data.PhoneNo}`} className='btn btn-primary px-4 py-2 '><i className="fa-solid fa-phone-volume"></i> Call</Link>
-          {String(data.Status)=='true' ? <button onClick={() => { Updatestatus(data._id);}} className="btn btn-success p-2"><i className="fa-solid fa-check"></i> Readed</button>:<button onClick={() => { Updatestatus(data._id);}} className="btn btn-warning p-2"><i className="fa-solid fa-xmark"></i> Mark as read</button>}
-           </div>
+          <Link href={`mailto:${data.Email}`} className='btn btn-danger px-4 py-2'><i className="fa-solid fa-envelope"></i> Email</Link>
+          <Link href={`https://wa.me/${data.PhoneNo}`} className='btn btn-success px-4 py-2 '><i className="fa-brands fa-whatsapp"></i> WhatsApp</Link>
+        </div>
+        <div  className='mt-3'>
+          {String(status)=='true' ? <button onClick={() => { Updatestatus(data._id);}} className="btn btn-success p-2 w-100"><i className="fa-solid fa-check"></i> Readed</button>:<button onClick={() => { Updatestatus(data._id);}} className="btn btn-warning p-2 w-100"><i className="fa-solid fa-xmark"></i> Mark as read</button>}
+        </div>
       </div>
     </section>
   )
