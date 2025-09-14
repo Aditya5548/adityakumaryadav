@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar"
 import Body from "@/components/body"
 const Home = () => {
   return (
-    <div>
+    <div className="w-100">
       <Navbar/>
       <Body/>
     </div>

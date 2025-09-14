@@ -45,7 +45,6 @@ const admin = () => {
     async function Updatestatus (id: any){
         try {
            const response = await axios.patch('/api/Routes',{id: id})
-           console.log(response)
            mutate()
            toast.success(response.data.status) 
         } catch (error) {
@@ -73,10 +72,10 @@ const admin = () => {
                         <p><b>Purpose: </b>{response.Purpose}</p>
                         <p><b>Date & Time: </b>{response.Date} & {response.Time}</p>
                     </div>
-                    <div id="clickMe" className="d-flex align-items-center gap-3">
-                        {String(response.Status)=='true' ? <button onClick={() => { Updatestatus(response._id);}} className="btn btn-success p-2"><i className="fa-solid fa-check"></i> Readed</button>:<button onClick={() => { Updatestatus(response._id);}} className="btn btn-warning p-2"><i className="fa-solid fa-xmark"></i> Unreaded</button>}
-                        <button onClick={() => { handleClick(response)}} className="btn btn-primary p-2"><i className="fa-solid fa-eye"></i> View</button>
-                        <button onClick={() => { deletemsg(response._id);}} className="btn btn-danger p-2"><i className="fa-solid fa-trash"></i> Delete</button>
+                    <div id="clickMe" className="d-flex align-items-center gap-2">
+                        {String(response.Status)=='true' ? <button onClick={() => { Updatestatus(response._id);}} className="btn btn-success"><i className="fa-solid fa-check"></i> Readed</button>:<button onClick={() => { Updatestatus(response._id);}} className="btn btn-warning p-2"><i className="fa-solid fa-xmark"></i> Unreaded</button>}
+                        <button onClick={() => { handleClick(response)}} className="btn btn-primary"><i className="fa-solid fa-eye"></i> View</button>
+                        <button onClick={() => { deletemsg(response._id);}} className="btn btn-danger"><i className="fa-solid fa-trash"></i> Delete</button>
                     </div>
                 </div>
                 </div>

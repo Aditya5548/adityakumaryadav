@@ -22,8 +22,8 @@ const Body = () => {
     //     });
     // })
     return (
-        <div>
-            <section className="container section-two">
+        <div className='container-fluid'>
+            <section className="section-two">
                 <div className="row">
                     <div className="section-two-content col-md-7">
                         <h2>
@@ -57,7 +57,7 @@ const Body = () => {
                 </div>
             </section>
 
-            <section className="container-fluid section-three">
+            <section className="section-three">
                 <div className="row about">
                     <div className="col-12">
                         <h1 className="aboutme">About me..</h1>

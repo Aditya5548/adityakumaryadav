@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import Image from "next/image";
 import image1 from '../image/1.png'
 import Link from "next/link";
@@ -44,7 +43,7 @@ const Navbar = () => {
                           <Link href="/contactus" className="link-tag">Contact</Link>
                       </li>
                       <li>
-                          <Link href="#" className="btn btn-danger link-tag text-light border-0">Resume</Link>
+                          <Link href="/resume.pdf" className="btn btn-danger link-tag text-light border-0">Resume</Link>
                       </li>
                   </ul>
                   <div>
