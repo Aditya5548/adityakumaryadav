@@ -37,6 +37,14 @@
     border-bottom: 1px solid orangered;
     width: max-content;
 }
+.assistant{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    gap: 2px;
+    bottom: 20px;
+    right: 20px;
+}
 @media only screen and (max-width: 750px){
     .navbar-container{
         display: flex;

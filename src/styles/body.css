@@ -46,15 +46,13 @@
 .myphoto{
     border-radius: 15%;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> b531eb8257c3c300a1ca3aacc72cd941a7c2bd47
+
 .about{
     padding: 10px 20px;
-    background-color: #dfe2e6;
+    background-color: rgb(214, 213, 213);
     border-radius: 20px;
-    margin: 0px 20px;
+    margin: 10px 20px;
 }
 .section-three i{
     background-color: black;
