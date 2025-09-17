@@ -1,10 +1,46 @@
 .list-style{
     list-style: none;
 }
-
-.borderbottom{
-    padding: 5px;
-    margin: 20px 0px;
-    background-color: grey;
+.skillcontainer{
+    background-color: rgb(221, 218, 218);
+}
+.skillinside{
+    width: 320px;
+    background-color: white;
+    margin: 20px;
+}
+.traininginterncontainer{
+    padding: 20px 0px;
+    text-align: center;
+}
+.trainingintern{
+    width: 300px;
+    
+}
+.trainingintern-header{
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    border-start-end-radius: 10%;
+    height: 150px;
+}
+
+.trainingintern-content{
+    padding: 20px 0px;
+    background-color: rgb(238, 236, 236);
+}
+
+.softpro{
+    background-color: rgb(233, 110, 65);
+}
+.barrownz{
+    background-color: #00549C;
+}
+.logo{
+    background-color: white;
+    border-radius: 20%;
+    padding: 2px;
 }

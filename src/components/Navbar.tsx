@@ -53,7 +53,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="assistant">
-                <Link href="tel:+917376219758"><img className="img1 mx-2" src={img1.src} alt="" height={50} width={50}/></Link>
+                <Link href="tel:+917376219758"><img className="img1 mx-2" src={img1.src} alt="" height={48} width={48}/></Link>
                 <Link href="https://wa.me/+919005825347"><img className='img2' src={img2.src} alt=""  height={65} width={65} /></Link>
             </div>
         </section>

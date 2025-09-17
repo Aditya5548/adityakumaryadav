@@ -19,7 +19,7 @@ const about = () => {
         <section className='About-section-1'>
           <div className="row">
             <div>
-              <h1 className="borderbottom">Schooling</h1>
+              <h1 className="text-center">Schooling</h1>
               <p>
                 My schooling is from police modern school, gomti nagar lucknow & my school is affiliated from CBSE Board. my jaurney is start in this school in year 2019 from the class 9th and it will completed with my intermediate Education in the year 2022. <br />
                 I have completed my high school with 69% marks in the year 2020 
@@ -31,9 +31,10 @@ const about = () => {
                 <Image src={image3} alt="image not found" width={300} height={250} />
                 <Image src={image4} alt="image not found" width={300} height={250} />
               </div>
+              <hr/>
             </div>
             <div>
-              <h1 className="borderbottom">Graduation</h1>
+              <h1 className="text-center">Graduation</h1>
               <p>
                 Currently, I am doing my Graduation from goel Institute of Technology & Management,Lucknow. <br />
                 My Graduation is start in the 2022 and it will be completed in the 2026. And current time i am in the 3rd Year. <br />
@@ -46,6 +47,7 @@ const about = () => {
                 <Image src={image7} alt="image not found" width={300} height={250} />
                 <Image src={image8} alt="image not found" width={300} height={250} />
               </div>
+              <hr />
             </div>
 
           </div>

@@ -11,19 +11,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 5%;
-    padding: 20px;
-}
-.project-items:hover{
     background-color: rgb(236, 236, 236);
-    border: none;
+    padding-bottom: 20px;
+    border-radius: 10px 10px 0px 0px;
 }
+
 .project-items button{
-    padding: 5px 20px;
+    padding: 5px 40px;
     font-size: large;
-    background-color: red;
+    background-color: rgb(5, 5, 5);
     color: white;
     border-radius: 10%;
     border: none;
+}
+
+.project-header{
+    background-color: rgb(129, 129, 129);
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+.project-logo{
+    border-radius: 20%;
 }
